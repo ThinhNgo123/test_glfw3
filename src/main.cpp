@@ -7,6 +7,7 @@
 #include <thread>
 #include <windows.h>
 #include <immintrin.h> //toi uu hoa cac phep toan bang cach tinh cung mot luc
+#include <cmath>
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
@@ -147,8 +148,8 @@ void processInput(GLFWwindow *window)
 
 int main()
 {
-    glfwWindowHint(GLFW_VERSION_MAJOR, 2);
-    glfwWindowHint(GLFW_VERSION_MINOR, 1);
+    glfwWindowHint(GLFW_VERSION_MAJOR, 4);
+    glfwWindowHint(GLFW_VERSION_MINOR, 6);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     GLFWwindow *window;
@@ -169,8 +170,6 @@ int main()
 
     std::cout << glGetString(GL_VERSION) << std::endl;
     std::cout << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
-
-
 
     unsigned int vao, vbo, ebo;
     glGenVertexArrays(1, &vao);
@@ -239,7 +238,13 @@ int main()
         0, 0, 0,    1
     };
 
-    Geometry::Mat4f uModel1(uModel); 
+    float angle = 0;
+    Geometry::Mat4f translateMatrix = Geometry::translate(0.5, -0.5, 0); 
+    // Geometry::Mat4f rotateXMatrix;
+    // Geometry::Mat4f uModel1 = translateMatrix * rotateXMatrix; 
+    Geometry::Mat4f uModel1;// = Geometry::translate(0.5, -0.5, 0) * Geometry::rotateZ(rad(angle)); 
+    // Geometry::Mat4f uModel1 = Geometry::rotateZ(rad(angle));// * Geometry::rotateZ(rad(angle)); 
+    uModel1.print();
 
     while(!glfwWindowShouldClose(window))
     {
@@ -263,7 +268,7 @@ int main()
         QueryPerformanceCounter(&currentCount);
         deltaTime = static_cast<double>(currentCount.QuadPart - lastCount.QuadPart) / frequency.QuadPart;
         lastCount = currentCount;
-        LOG("FPS = " << realFps);
+        // LOG("FPS = " << realFps);
         timeSleep = timePerFrameTarget - deltaTime;
 
         // event
@@ -271,7 +276,11 @@ int main()
         processInput(window);
 
         // update
+        uModel1 = translateMatrix * Geometry::rotateZ(rad(angle)); 
+        // uModel1 = Geometry::rotateZ(rad(angle)); 
+        // uModel1 = Geometry::rotateZ(rad(angle)) * Geometry::translate(0.5, -0.5, 0); 
         x += 0.00001 * deltaTime;
+        angle += 0.1;
 
         //render
         glClearColor(1, 1, 0.5, 1);

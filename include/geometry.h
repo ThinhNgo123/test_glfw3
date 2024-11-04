@@ -1,5 +1,10 @@
 #pragma once
 
+#define PI 3.14
+
+float rad(float angle);
+float deg(float angle);
+
 namespace Geometry
 {
     /* 
@@ -23,8 +28,10 @@ namespace Geometry
         void set(int row, int col, float value);
         const float *valuePtr() const;
         Mat4f transpose();
+        void print();
         Mat4f operator +(Mat4f& other) const;
         Mat4f operator *(Mat4f& other) const;
+        friend Mat4f operator*(Mat4f mat1, Mat4f mat2);
     };
 
     template <int Number>
@@ -46,8 +53,12 @@ namespace Geometry
     typedef Vec<3> Vec3;
     typedef Vec<4> Vec4;
 
-    Mat4f translate(Mat4f& matrix, Vec3& vec3);
-    Mat4f rotate(Mat4f& matrix, float angleX, float angleY, float angleZ);
+    Mat4f translate(float x, float y, float z);
+    Mat4f rotateX(float angleX);
+    Mat4f rotateY(float angleY);
+    Mat4f rotateZ(float angleZ);
     Mat4f rotate(Mat4f& matrix, Vec3& vec3, float angle);
-    Mat4f scale(Mat4f& matrix, Vec3& vec3);
+    Mat4f scale(float scaleX, float scaleY, float scaleZ);
+
+    Mat4f operator *(Mat4f mat1, Mat4f mat2);
 }

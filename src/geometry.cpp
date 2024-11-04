@@ -1,5 +1,6 @@
 #include "geometry.h"
 #include <iostream>
+#include <cmath>
 
 namespace Geometry
 {
@@ -74,6 +75,18 @@ namespace Geometry
         return Mat4f();
     }
 
+    void Mat4f::print()
+    {
+        for (int i = 0; i < m_rowNumber; i++)
+        {
+            for (int j = 0; j < m_colNumber; j++)
+            {
+                std::cout << get(i, j) << "   ";
+            }
+            std::cout << std::endl;
+        }
+    }
+
     Mat4f Mat4f::operator+(Mat4f &other) const
     {
         Mat4f result;
@@ -94,12 +107,12 @@ namespace Geometry
         {
             for (int j = 0; j < m_colNumber; j++)
             {
+                float temp = 0;
                 for (int k = 0; k < m_colNumber; k++)
                 {
-                    float temp = 0;
-                    temp += get(i, k) + other.get(k, j);
-                    result.set(i, j, temp);
+                    temp += get(i, k) * other.get(k, j);
                 }
+                result.set(i, j, temp);
             }
         }
         return result;
@@ -143,20 +156,44 @@ namespace Geometry
     //     return Vec<Number>();
     // }
 
-    Mat4f translate(Mat4f& matrix, Vec3& vec3)
+    Mat4f translate(float x, float y, float z)
     {
         Mat4f result;
-        for (int i = 0; i < m_c)
-        return Mat4f(
-            get(0, 0)
-        );
+        //48->60 memcpy(&m_data[4 * 3], &vec3, sizeof(Vec3))
+        result.set(0, 3, x);
+        result.set(1, 3, y);
+        result.set(2, 3, z);
+        return result;
     }
 
-    Mat4f rotate(Mat4f& matrix, float angleX, float angleY, float angleZ)
+    Mat4f rotateX(float angle)
     {
-        return Mat4f(
+        Mat4f result;
+        result.set(1, 1, std::cosf(angle));
+        result.set(1, 2, -std::sinf(angle));
+        result.set(2, 1, std::sinf(angle));
+        result.set(2, 2, std::cosf(angle));
+        return result;
+    }
 
-        );
+    Mat4f rotateY(float angle)
+    {
+        Mat4f result;
+        result.set(0, 0, std::cosf(angle));
+        result.set(0, 2, std::sinf(angle));
+        result.set(2, 0, -std::sinf(angle));
+        result.set(2, 2, std::cosf(angle));
+        return result;
+    }
+
+    Mat4f rotateZ(float angle)
+    {
+        Mat4f result;
+        result.set(0, 0, std::cos(angle));
+        result.set(0, 1, -std::sin(angle));
+        result.set(1, 0, std::sin(angle));
+        result.set(1, 1, std::cos(angle));
+        return result;
     }
 
     Mat4f rotate(Mat4f& matrix, Vec3& vec3, float angle)
@@ -164,8 +201,40 @@ namespace Geometry
         return Mat4f();
     }
 
-    Mat4f scale(Mat4f& matrix, Vec3& vec3)
+    Mat4f scale(float scaleX, float scaleY, float scaleZ)
     {
-        return Mat4f();
+        Mat4f result;
+        result.set(0, 0, scaleX);
+        result.set(1, 1, scaleY);
+        result.set(2, 2, scaleZ);
+        return result;
     }
+
+    Mat4f operator*(Mat4f mat1, Mat4f mat2)
+    {
+        Mat4f result;
+        for (int i = 0; i < result.m_rowNumber; i++)
+        {
+            for (int j = 0; j < result.m_colNumber; j++)
+            {
+                float temp = 0;
+                for (int k = 0; k < mat1.m_colNumber; k++)
+                {
+                    temp += mat1.get(i, k) * mat2.get(k, j);
+                }
+                result.set(i, j, temp);
+            }
+        }
+        return result;
+    }
+}
+
+float rad(float angle)
+{
+    return (angle * PI) / 180;
+}
+
+float deg(float angle)
+{
+    return (angle * 180) / PI;
 }

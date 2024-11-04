@@ -1,0 +1,20 @@
+[
+{
+  "directory": "D:/Code/repositories/test_glfw3/build",
+  "command": "D:\\App\\msys2\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/hello_world.dir/includes_CXX.rsp -g -o CMakeFiles\\hello_world.dir\\src\\geometry.cpp.obj -c D:\\Code\\repositories\\test_glfw3\\src\\geometry.cpp",
+  "file": "D:/Code/repositories/test_glfw3/src/geometry.cpp",
+  "output": "CMakeFiles/hello_world.dir/src/geometry.cpp.obj"
+},
+{
+  "directory": "D:/Code/repositories/test_glfw3/build",
+  "command": "D:\\App\\msys2\\ucrt64\\bin\\gcc.exe -DGLFW_DLL @CMakeFiles/hello_world.dir/includes_C.rsp -g -o CMakeFiles\\hello_world.dir\\src\\glad.c.obj -c D:\\Code\\repositories\\test_glfw3\\src\\glad.c",
+  "file": "D:/Code/repositories/test_glfw3/src/glad.c",
+  "output": "CMakeFiles/hello_world.dir/src/glad.c.obj"
+},
+{
+  "directory": "D:/Code/repositories/test_glfw3/build",
+  "command": "D:\\App\\msys2\\ucrt64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/hello_world.dir/includes_CXX.rsp -g -o CMakeFiles\\hello_world.dir\\src\\main.cpp.obj -c D:\\Code\\repositories\\test_glfw3\\src\\main.cpp",
+  "file": "D:/Code/repositories/test_glfw3/src/main.cpp",
+  "output": "CMakeFiles/hello_world.dir/src/main.cpp.obj"
+}
+]

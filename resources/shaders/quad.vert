@@ -1,13 +1,13 @@
 // #version 400 core
-#version 120 core
+#version 460 core
 
-// layout(location = 0) in vec2 aPos;
-// layout(location = 0) in vec2 aTex;
+layout(location = 0) in vec2 aPos;
+layout(location = 1) in vec2 aTex;
 
-attribute vec2 aPos;
-attribute vec2 aTex;
+// attribute vec2 aPos;
+// attribute vec2 aTex;
 
-varying vec2 Tex;
+out vec2 Tex;
 
 uniform float x;
 uniform mat4 u_model;
