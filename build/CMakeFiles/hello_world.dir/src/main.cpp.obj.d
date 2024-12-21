@@ -426,4 +426,5 @@ CMakeFiles/hello_world.dir/src/main.cpp.obj: \
  D:/Code/repositories/test_glfw3/include/stb_image.h \
  D:/App/msys2/ucrt64/include/c++/14.1.0/math.h \
  D:/App/msys2/ucrt64/include/assert.h \
- D:/Code/repositories/test_glfw3/include/geometry.h
+ D:/Code/repositories/test_glfw3/include/geometry.h \
+ D:/Code/repositories/test_glfw3/include/camera.h

@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Code/repositories/test_glfw3/src/glad.c" "CMakeFiles/hello_world.dir/src/glad.c.obj" "gcc" "CMakeFiles/hello_world.dir/src/glad.c.obj.d"
+  "D:/Code/repositories/test_glfw3/src/camera.cpp" "CMakeFiles/hello_world.dir/src/camera.cpp.obj" "gcc" "CMakeFiles/hello_world.dir/src/camera.cpp.obj.d"
   "D:/Code/repositories/test_glfw3/src/geometry.cpp" "CMakeFiles/hello_world.dir/src/geometry.cpp.obj" "gcc" "CMakeFiles/hello_world.dir/src/geometry.cpp.obj.d"
   "D:/Code/repositories/test_glfw3/src/main.cpp" "CMakeFiles/hello_world.dir/src/main.cpp.obj" "gcc" "CMakeFiles/hello_world.dir/src/main.cpp.obj.d"
   )

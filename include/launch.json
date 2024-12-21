@@ -1,0 +1,51 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug project C++",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/build/hello_world.exe", // Đường dẫn đến file thực thi
+        "args": [], // Tham số dòng lệnh (nếu có)
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false, // Nếu muốn mở terminal bên ngoài
+        "MIMode": "gdb",
+        "miDebuggerPath": "D:/App/msys2/ucrt64/bin/gdb.exe", // Đường dẫn đến gdb
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+      {
+        "name": "Debug Cmake C++",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${command:cmake.launchTargetPath}", // Đường dẫn đến file thực thi
+        "args": [], // Tham số dòng lệnh (nếu có)
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [
+            {
+                "name": "PATH",
+                "value": "$PATH:${command:cmake.launchTargetDirectory}"
+            }
+        ],
+        "externalConsole": false, // Nếu muốn mở terminal bên ngoài
+        "MIMode": "gdb",
+        "miDebuggerPath": "D:/App/msys2/ucrt64/bin/gdb.exe", // Đường dẫn đến gdb
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/hello_world.dir/src/camera.cpp.obj"
+  "CMakeFiles/hello_world.dir/src/camera.cpp.obj.d"
   "CMakeFiles/hello_world.dir/src/geometry.cpp.obj"
   "CMakeFiles/hello_world.dir/src/geometry.cpp.obj.d"
   "CMakeFiles/hello_world.dir/src/glad.c.obj"

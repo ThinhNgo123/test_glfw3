@@ -1,5 +1,6 @@
-CMakeFiles/hello_world.dir/src/geometry.cpp.obj: \
- D:\Code\repositories\test_glfw3\src\geometry.cpp \
+CMakeFiles/hello_world.dir/src/camera.cpp.obj: \
+ D:\Code\repositories\test_glfw3\src\camera.cpp \
+ D:/Code/repositories/test_glfw3/include/camera.h \
  D:/Code/repositories/test_glfw3/include/geometry.h \
  D:/App/msys2/ucrt64/include/c++/14.1.0/cmath \
  D:/App/msys2/ucrt64/include/c++/14.1.0/bits/requires_hosted.h \

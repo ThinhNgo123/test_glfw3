@@ -31,7 +31,7 @@ namespace Geometry
             float m10, float m11, float m12, float m13,
             float m20, float m21, float m22, float m23,
             float m30, float m31, float m32, float m33
-        )
+        ) : m_rowNumber(4), m_colNumber(4)
     {
         set(0, 0, m00);
         set(0, 1, m01);
@@ -118,44 +118,6 @@ namespace Geometry
         return result;
     }
 
-    // Vec::Vec()
-    // {
-    //     for (int i = 0; i < Number; i++)
-    //     {
-    //         m_data[i] = 0;
-    //     }
-    // }
-
-    // Vec<Number>::~Vec()
-    // {
-
-    // }
-
-    // float Vec<Number>::get(int index) const
-    // {
-    //     return 0;
-    // }
-
-    // void Vec<Number>::set(int index, float value)
-    // {
-
-    // }
-
-    // Vec<Number> Vec<Number>::operator +(Vec<Number>& other) const
-    // {
-    //     return Vec<Number>();
-    // }
-
-    // Vec<Number> Vec<Number>::operator *(Vec<Number>& other) const
-    // {
-    //     return Vec<Number>();
-    // }
-
-    // Vec<Number> Vec<Number>::operator *(float scalar) const
-    // {
-    //     return Vec<Number>();
-    // }
-
     Mat4f translate(float x, float y, float z)
     {
         Mat4f result;
@@ -196,7 +158,7 @@ namespace Geometry
         return result;
     }
 
-    Mat4f rotate(Mat4f& matrix, Vec3& vec3, float angle)
+    Mat4f rotate(Mat4f& matrix, Vec3f& vec3, float angle)
     {
         return Mat4f();
     }
@@ -207,6 +169,15 @@ namespace Geometry
         result.set(0, 0, scaleX);
         result.set(1, 1, scaleY);
         result.set(2, 2, scaleZ);
+        return result;
+    }
+
+    Vec3f cross(Vec3f v1, Vec3f v2)
+    {
+        Vec3f result;
+        result.set(0, v1[1] * v2[2] - v1[2] * v2[1]);
+        result.set(1, v1[2] * v2[0] - v1[0] * v2[2]);
+        result.set(2, v1[0] * v2[1] - v1[1] * v2[0]);
         return result;
     }
 

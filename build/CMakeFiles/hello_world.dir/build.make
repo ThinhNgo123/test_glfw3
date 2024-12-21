@@ -68,11 +68,26 @@ include CMakeFiles/hello_world.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/hello_world.dir/flags.make
 
+CMakeFiles/hello_world.dir/src/camera.cpp.obj: CMakeFiles/hello_world.dir/flags.make
+CMakeFiles/hello_world.dir/src/camera.cpp.obj: CMakeFiles/hello_world.dir/includes_CXX.rsp
+CMakeFiles/hello_world.dir/src/camera.cpp.obj: D:/Code/repositories/test_glfw3/src/camera.cpp
+CMakeFiles/hello_world.dir/src/camera.cpp.obj: CMakeFiles/hello_world.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\repositories\test_glfw3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_world.dir/src/camera.cpp.obj"
+	D:\App\msys2\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_world.dir/src/camera.cpp.obj -MF CMakeFiles\hello_world.dir\src\camera.cpp.obj.d -o CMakeFiles\hello_world.dir\src\camera.cpp.obj -c D:\Code\repositories\test_glfw3\src\camera.cpp
+
+CMakeFiles/hello_world.dir/src/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/hello_world.dir/src/camera.cpp.i"
+	D:\App\msys2\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\repositories\test_glfw3\src\camera.cpp > CMakeFiles\hello_world.dir\src\camera.cpp.i
+
+CMakeFiles/hello_world.dir/src/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/hello_world.dir/src/camera.cpp.s"
+	D:\App\msys2\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\repositories\test_glfw3\src\camera.cpp -o CMakeFiles\hello_world.dir\src\camera.cpp.s
+
 CMakeFiles/hello_world.dir/src/geometry.cpp.obj: CMakeFiles/hello_world.dir/flags.make
 CMakeFiles/hello_world.dir/src/geometry.cpp.obj: CMakeFiles/hello_world.dir/includes_CXX.rsp
 CMakeFiles/hello_world.dir/src/geometry.cpp.obj: D:/Code/repositories/test_glfw3/src/geometry.cpp
 CMakeFiles/hello_world.dir/src/geometry.cpp.obj: CMakeFiles/hello_world.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\repositories\test_glfw3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_world.dir/src/geometry.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\repositories\test_glfw3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hello_world.dir/src/geometry.cpp.obj"
 	D:\App\msys2\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_world.dir/src/geometry.cpp.obj -MF CMakeFiles\hello_world.dir\src\geometry.cpp.obj.d -o CMakeFiles\hello_world.dir\src\geometry.cpp.obj -c D:\Code\repositories\test_glfw3\src\geometry.cpp
 
 CMakeFiles/hello_world.dir/src/geometry.cpp.i: cmake_force
@@ -87,7 +102,7 @@ CMakeFiles/hello_world.dir/src/glad.c.obj: CMakeFiles/hello_world.dir/flags.make
 CMakeFiles/hello_world.dir/src/glad.c.obj: CMakeFiles/hello_world.dir/includes_C.rsp
 CMakeFiles/hello_world.dir/src/glad.c.obj: D:/Code/repositories/test_glfw3/src/glad.c
 CMakeFiles/hello_world.dir/src/glad.c.obj: CMakeFiles/hello_world.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\repositories\test_glfw3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/hello_world.dir/src/glad.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\repositories\test_glfw3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/hello_world.dir/src/glad.c.obj"
 	D:\App\msys2\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/hello_world.dir/src/glad.c.obj -MF CMakeFiles\hello_world.dir\src\glad.c.obj.d -o CMakeFiles\hello_world.dir\src\glad.c.obj -c D:\Code\repositories\test_glfw3\src\glad.c
 
 CMakeFiles/hello_world.dir/src/glad.c.i: cmake_force
@@ -102,7 +117,7 @@ CMakeFiles/hello_world.dir/src/main.cpp.obj: CMakeFiles/hello_world.dir/flags.ma
 CMakeFiles/hello_world.dir/src/main.cpp.obj: CMakeFiles/hello_world.dir/includes_CXX.rsp
 CMakeFiles/hello_world.dir/src/main.cpp.obj: D:/Code/repositories/test_glfw3/src/main.cpp
 CMakeFiles/hello_world.dir/src/main.cpp.obj: CMakeFiles/hello_world.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\repositories\test_glfw3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/hello_world.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\repositories\test_glfw3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/hello_world.dir/src/main.cpp.obj"
 	D:\App\msys2\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_world.dir/src/main.cpp.obj -MF CMakeFiles\hello_world.dir\src\main.cpp.obj.d -o CMakeFiles\hello_world.dir\src\main.cpp.obj -c D:\Code\repositories\test_glfw3\src\main.cpp
 
 CMakeFiles/hello_world.dir/src/main.cpp.i: cmake_force
@@ -115,6 +130,7 @@ CMakeFiles/hello_world.dir/src/main.cpp.s: cmake_force
 
 # Object files for target hello_world
 hello_world_OBJECTS = \
+"CMakeFiles/hello_world.dir/src/camera.cpp.obj" \
 "CMakeFiles/hello_world.dir/src/geometry.cpp.obj" \
 "CMakeFiles/hello_world.dir/src/glad.c.obj" \
 "CMakeFiles/hello_world.dir/src/main.cpp.obj"
@@ -122,6 +138,7 @@ hello_world_OBJECTS = \
 # External object files for target hello_world
 hello_world_EXTERNAL_OBJECTS =
 
+hello_world.exe: CMakeFiles/hello_world.dir/src/camera.cpp.obj
 hello_world.exe: CMakeFiles/hello_world.dir/src/geometry.cpp.obj
 hello_world.exe: CMakeFiles/hello_world.dir/src/glad.c.obj
 hello_world.exe: CMakeFiles/hello_world.dir/src/main.cpp.obj
@@ -130,7 +147,7 @@ hello_world.exe: D:/App/msys2/ucrt64/lib/libglfw3.dll.a
 hello_world.exe: CMakeFiles/hello_world.dir/linkLibs.rsp
 hello_world.exe: CMakeFiles/hello_world.dir/objects1.rsp
 hello_world.exe: CMakeFiles/hello_world.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Code\repositories\test_glfw3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable hello_world.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\Code\repositories\test_glfw3\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable hello_world.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\hello_world.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
