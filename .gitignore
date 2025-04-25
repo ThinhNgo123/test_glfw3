@@ -1,0 +1,5 @@
+build/
+# Bỏ toàn bộ .vscode/ trừ launch.json và tasks.json
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
