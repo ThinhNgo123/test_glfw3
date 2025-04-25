@@ -1,4 +1,4 @@
-#include "glad/glad.h"
+#include <GL/glew.h>
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -8,6 +8,9 @@
 #include <windows.h>
 #include <immintrin.h> //toi uu hoa cac phep toan bang cach tinh cung mot luc
 #include <cmath>
+#include <assimp/Importer.hpp>
+#include <assimp/scene.h>
+#include <assimp/postprocess.h>
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
@@ -43,6 +46,18 @@ struct InputState
     ButtonState state = ButtonState::RELEASE;
 };
 
+void loadModel()
+{
+    Assimp::Importer importer;
+    // const aiScene *scene = importer.ReadFile("../resources/models/Dobermann.fbx", aiProcess_Triangulate);
+    const aiScene *scene = importer.ReadFile("../resources/models/bugatti.obj", aiProcess_Triangulate);
+    // scene->mRootNode
+    if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
+    {
+        std::cerr << "Load model failed: " << importer.GetErrorString() << std::endl;
+    }
+    // scene->mMeshes[0]->mFaces
+}
 
 unsigned int createShaderProgram(std::string vertexPath, std::string fragmentPath)
 {
@@ -250,7 +265,8 @@ int main()
     window = glfwCreateWindow(WIDTH, HEIGHT, "My Window", NULL, NULL);
     glfwMakeContextCurrent(window);
 
-    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+    // if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+    if (glewInit() != GLEW_OK)
     {
         std::cerr << "failed glad" << "\n";
         return -1;
@@ -260,6 +276,8 @@ int main()
     std::cout << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;
 
     glfwSwapInterval(0);
+
+    loadModel();
 
     unsigned int vao, vbo, ebo;
     glGenVertexArrays(1, &vao);

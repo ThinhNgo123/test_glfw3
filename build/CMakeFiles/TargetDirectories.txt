@@ -1,3 +1,0 @@
-D:/Code/repositories/test_glfw3/build/CMakeFiles/hello_world.dir
-D:/Code/repositories/test_glfw3/build/CMakeFiles/edit_cache.dir
-D:/Code/repositories/test_glfw3/build/CMakeFiles/rebuild_cache.dir

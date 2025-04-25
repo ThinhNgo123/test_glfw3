@@ -1,3 +1,0 @@
-D:\App\CMake\bin\cmake.exe -E rm -f CMakeFiles\hello_world.dir/objects.a
-D:\App\msys2\ucrt64\bin\ar.exe qc CMakeFiles\hello_world.dir/objects.a @CMakeFiles\hello_world.dir\objects1.rsp
-D:\App\msys2\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\hello_world.dir/objects.a -Wl,--no-whole-archive -o hello_world.exe -Wl,--out-implib,libhello_world.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\hello_world.dir\linkLibs.rsp
