@@ -7,12 +7,15 @@ project(hello_world VERSION 1.0.0)
 
 # set(CMAKE_PREFIX_PATH ".")
 
+find_package(GLEW REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(GLFW3 REQUIRED)
+find_package(Assimp REQUIRED)
 
 include_directories( 
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/resources
+    ${ASSIMP_INCLUDE_DIRS}
 )
 
 file(GLOB SRCS
@@ -27,7 +30,13 @@ add_executable(
 )
 
 
-target_link_libraries(${PROJECT_NAME} glfw ${OPENGL_LIBRARIES})
+target_link_libraries(
+    ${PROJECT_NAME} 
+    glfw
+    glew32 
+    ${ASSIMP_LIBRARIES} 
+    ${OPENGL_LIBRARIES}
+)
 # target_link_libraries(${PROJECT_NAME} glfw)
 
 # add_definitions(-DDEBUG)

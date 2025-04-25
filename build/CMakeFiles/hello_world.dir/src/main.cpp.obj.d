@@ -1,9 +1,7 @@
 CMakeFiles/hello_world.dir/src/main.cpp.obj: \
  D:\Code\repositories\test_glfw3\src\main.cpp \
- D:/Code/repositories/test_glfw3/include/glad/glad.h \
- D:/Code/repositories/test_glfw3/include/KHR/khrplatform.h \
- D:/App/msys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/stdint.h \
- D:/App/msys2/ucrt64/include/stdint.h \
+ D:/App/msys2/ucrt64/include/GL/glew.h \
+ D:/App/msys2/ucrt64/include/inttypes.h \
  D:/App/msys2/ucrt64/include/crtdefs.h \
  D:/App/msys2/ucrt64/include/corecrt.h \
  D:/App/msys2/ucrt64/include/_mingw.h \
@@ -11,8 +9,11 @@ CMakeFiles/hello_world.dir/src/main.cpp.obj: \
  D:/App/msys2/ucrt64/include/_mingw_secapi.h \
  D:/App/msys2/ucrt64/include/vadefs.h \
  D:/App/msys2/ucrt64/include/sdks/_mingw_ddk.h \
+ D:/App/msys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/stdint.h \
+ D:/App/msys2/ucrt64/include/stdint.h \
  D:/App/msys2/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/stddef.h \
  D:/App/msys2/ucrt64/include/stddef.h \
+ D:/App/msys2/ucrt64/include/GL/glu.h D:/App/msys2/ucrt64/include/GL/gl.h \
  D:/App/msys2/ucrt64/include/c++/14.1.0/iostream \
  D:/App/msys2/ucrt64/include/c++/14.1.0/bits/requires_hosted.h \
  D:/App/msys2/ucrt64/include/c++/14.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -423,6 +424,45 @@ CMakeFiles/hello_world.dir/src/main.cpp.obj: \
  D:/App/msys2/ucrt64/include/c++/14.1.0/tr1/poly_hermite.tcc \
  D:/App/msys2/ucrt64/include/c++/14.1.0/tr1/poly_laguerre.tcc \
  D:/App/msys2/ucrt64/include/c++/14.1.0/tr1/riemann_zeta.tcc \
+ D:/App/msys2/ucrt64/include/assimp/Importer.hpp \
+ D:/App/msys2/ucrt64/include/assimp/types.h \
+ D:/App/msys2/ucrt64/include/assimp/defs.h \
+ D:/App/msys2/ucrt64/include/assimp/config.h \
+ D:/App/msys2/ucrt64/include/assimp/vector2.h \
+ D:/App/msys2/ucrt64/include/assimp/vector3.h \
+ D:/App/msys2/ucrt64/include/assimp/color4.h \
+ D:/App/msys2/ucrt64/include/assimp/matrix3x3.h \
+ D:/App/msys2/ucrt64/include/assimp/matrix4x4.h \
+ D:/App/msys2/ucrt64/include/assimp/quaternion.h \
+ D:/App/msys2/ucrt64/include/c++/14.1.0/cstring \
+ D:/App/msys2/ucrt64/include/assimp/vector2.inl \
+ D:/App/msys2/ucrt64/include/assimp/vector3.inl \
+ D:/App/msys2/ucrt64/include/assimp/color4.inl \
+ D:/App/msys2/ucrt64/include/assimp/matrix3x3.inl \
+ D:/App/msys2/ucrt64/include/c++/14.1.0/algorithm \
+ D:/App/msys2/ucrt64/include/c++/14.1.0/bits/stl_algo.h \
+ D:/App/msys2/ucrt64/include/c++/14.1.0/bits/algorithmfwd.h \
+ D:/App/msys2/ucrt64/include/c++/14.1.0/bits/stl_heap.h \
+ D:/App/msys2/ucrt64/include/c++/14.1.0/bits/uniform_int_dist.h \
+ D:/App/msys2/ucrt64/include/c++/14.1.0/bits/stl_tempbuf.h \
+ D:/App/msys2/ucrt64/include/c++/14.1.0/pstl/glue_algorithm_defs.h \
+ D:/App/msys2/ucrt64/include/c++/14.1.0/pstl/execution_defs.h \
+ D:/App/msys2/ucrt64/include/assimp/matrix4x4.inl \
+ D:/App/msys2/ucrt64/include/assimp/MathFunctions.h \
+ D:/App/msys2/ucrt64/include/assimp/quaternion.inl \
+ D:/App/msys2/ucrt64/include/assimp/scene.h \
+ D:/App/msys2/ucrt64/include/assimp/texture.h \
+ D:/App/msys2/ucrt64/include/assimp/Compiler/pushpack1.h \
+ D:/App/msys2/ucrt64/include/assimp/Compiler/poppack1.h \
+ D:/App/msys2/ucrt64/include/assimp/mesh.h \
+ D:/App/msys2/ucrt64/include/assimp/aabb.h \
+ D:/App/msys2/ucrt64/include/assimp/light.h \
+ D:/App/msys2/ucrt64/include/assimp/camera.h \
+ D:/App/msys2/ucrt64/include/assimp/material.h \
+ D:/App/msys2/ucrt64/include/assimp/material.inl \
+ D:/App/msys2/ucrt64/include/assimp/anim.h \
+ D:/App/msys2/ucrt64/include/assimp/metadata.h \
+ D:/App/msys2/ucrt64/include/assimp/postprocess.h \
  D:/Code/repositories/test_glfw3/include/stb_image.h \
  D:/App/msys2/ucrt64/include/c++/14.1.0/math.h \
  D:/App/msys2/ucrt64/include/assert.h \

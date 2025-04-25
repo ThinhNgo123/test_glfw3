@@ -144,6 +144,8 @@ hello_world.exe: CMakeFiles/hello_world.dir/src/glad.c.obj
 hello_world.exe: CMakeFiles/hello_world.dir/src/main.cpp.obj
 hello_world.exe: CMakeFiles/hello_world.dir/build.make
 hello_world.exe: D:/App/msys2/ucrt64/lib/libglfw3.dll.a
+hello_world.exe: D:/App/msys2/ucrt64/lib/libassimp.dll.a
+hello_world.exe: D:/App/msys2/ucrt64/lib/libz.dll.a
 hello_world.exe: CMakeFiles/hello_world.dir/linkLibs.rsp
 hello_world.exe: CMakeFiles/hello_world.dir/objects1.rsp
 hello_world.exe: CMakeFiles/hello_world.dir/link.txt
